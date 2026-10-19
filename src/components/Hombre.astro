@@ -1,0 +1,37 @@
+---
+---
+<div class="categoria">
+  <img src="hombre.png" alt="Hombre" />
+  <h2 class="texto-vertical">HOMBRE</h2>
+</div>
+
+<style>
+  .categoria {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .categoria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .texto-vertical {
+    position: absolute;
+    color: white;
+    font-size: 75px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    margin: 0;
+    font-family: sans-serif;
+  }
+</style>

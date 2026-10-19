@@ -1,11 +1,24 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Mujer from '../components/Mujer.astro';
+import Hombre from '../components/Hombre.astro';
 ---
 
 <Layout>
-	<Welcome />
+  <div class="contenedor-categorias">
+    <Mujer />
+    <Hombre />
+  </div>
 </Layout>
+
+<style>
+  body {
+    margin: 0;
+  }
+
+  .contenedor-categorias {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+  }
+</style>
